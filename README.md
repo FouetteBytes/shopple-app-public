@@ -269,6 +269,50 @@ Users can contribute to the product catalog through a structured request system.
 
 ---
 
+## Architecture Highlights
+
+### Price Comparison Flow
+
+```mermaid
+graph TD
+    A[User Search] -->|Input| B[Autocomplete]
+    B -->|Selection| C[Cloud Search <br/> fastProductSearchV2]
+    C -->|Query| D[(Price Aggregation <br/> current_prices collection)]
+    D -->|Calc| E[Cheapest Price Computation]
+    E -->|Display| F[Results with Store Badge]
+    style B fill:#f9f,stroke:#333
+    style C fill:#bbf,stroke:#333
+    style D fill:#bfb,stroke:#333
+```
+
+### Collaboration Flow
+
+```mermaid
+graph TD
+    A[Share List] -->|Invite| B[Role Assignment]
+    B -->|Write| C[(Firestore memberRoles)]
+    C -->|Trigger| D[Real-time Listeners]
+    D -->|Sync| E[UI Updates]
+    D -->|Track| F[Activity Logging]
+    F -->|Display| G[Feed Widget]
+    D -->|Signal| H[Presence Updates]
+    H -->|Show| I[Active Viewers]
+```
+
+### Product Request Flow
+
+```mermaid
+graph LR
+    A[User Report] --> B{Form Validation}
+    B -->|Valid| C[Photo Upload <br/> Firebase Storage]
+    C --> D[(Firestore Write <br/> product_requests)]
+    D --> E[Admin Review]
+    E --> F[Status Update]
+    F --> G[User Notification <br/> Request Center]
+```
+
+---
+
 ### Feature Flags and Remote Configuration
 
 Firebase Remote Config enables gradual feature rollouts:
@@ -460,51 +504,4 @@ Generate Firebase configuration via `flutterfire configure` and ensure the follo
 ```bash
 flutter test --coverage
 ```
-
----
-
-## Architecture Highlights
-
-### Price Comparison Flow
-
-```mermaid
-graph TD
-    A[User Search] -->|Input| B[Autocomplete]
-    B -->|Selection| C[Cloud Search <br/> fastProductSearchV2]
-    C -->|Query| D[(Price Aggregation <br/> current_prices collection)]
-    D -->|Calc| E[Cheapest Price Computation]
-    E -->|Display| F[Results with Store Badge]
-    style B fill:#f9f,stroke:#333
-    style C fill:#bbf,stroke:#333
-    style D fill:#bfb,stroke:#333
-```
-
-### Collaboration Flow
-
-```mermaid
-graph TD
-    A[Share List] -->|Invite| B[Role Assignment]
-    B -->|Write| C[(Firestore memberRoles)]
-    C -->|Trigger| D[Real-time Listeners]
-    D -->|Sync| E[UI Updates]
-    D -->|Track| F[Activity Logging]
-    F -->|Display| G[Feed Widget]
-    D -->|Signal| H[Presence Updates]
-    H -->|Show| I[Active Viewers]
-```
-
-### Product Request Flow
-
-```mermaid
-graph LR
-    A[User Report] --> B{Form Validation}
-    B -->|Valid| C[Photo Upload <br/> Firebase Storage]
-    C --> D[(Firestore Write <br/> product_requests)]
-    D --> E[Admin Review]
-    E --> F[Status Update]
-    F --> G[User Notification <br/> Request Center]
-```
-
-
-
 
