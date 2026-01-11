@@ -1,0 +1,197 @@
+name: shopple
+description: "Personal Shopping & Lifestyle Assistant App"
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0-278.1.beta
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  get: ^4.7.2
+  font_awesome_flutter: ^10.8.0
+  flutter_feather_icons: ^2.0.0+1
+  fl_chart: ^1.0.0
+  flutter_slidable: ^4.0.0
+  table_calendar: ^3.2.0
+  glassmorphism: ^3.0.0
+  flutter_card_swiper: ^7.0.2
+  flutter_shapes: ^0.3.0
+  firebase_core: ^3.15.1
+  firebase_auth: ^5.6.2
+  google_sign_in: ^6.2.1
+  cloud_firestore: ^5.6.11
+  firebase_database: ^11.1.4
+  shared_preferences: ^2.2.2
+  flutter_secure_storage: ^9.0.0
+  fluttertoast: ^8.2.4
+  cached_network_image: ^3.3.1
+  share_plus: ^11.1.0
+  lottie: ^3.1.2
+  rive: ^0.13.7
+  intl: ^0.20.2
+  
+  # Phone Authentication Dependencies
+  country_picker: ^2.0.20
+  pin_code_fields: ^8.0.1
+  intl_phone_field: ^3.2.0
+  
+  # Email Verification Support
+  url_launcher: ^6.2.1
+  firebase_app_check: ^0.3.2+10
+  
+  # Image Upload Dependencies - NEW for custom profile pictures
+  image_picker: ^1.0.7
+  flutter_image_compress: ^2.1.0
+  firebase_storage: ^12.3.7
+  path_provider: ^2.1.2
+  permission_handler: ^11.2.0
+  uuid: ^4.3.3
+  
+  # 🎨 Pre-built Pattern Libraries (Latest 2025) - PHASE 2 REQUIREMENTS
+  animated_background: ^2.0.0          # Animated background patterns
+  flutter_staggered_animations: ^1.1.1 # Pattern animation effects
+  pattern_lock: ^2.0.0                 # Pattern-based backgrounds
+  
+  # 🎯 Geometric Pattern Libraries - NULL SAFETY COMPATIBLE
+  pattern_box: ^0.5.4                  # 15+ built-in pattern painters (NULL SAFE)
+  flutter_svg: ^2.2.0                  # SVG pattern support
+  
+  # ⚡ Advanced Color & Pattern Libraries
+  flex_color_picker: ^3.5.2            # Advanced color picker
+  sliver_tools: ^0.2.12                # Sliver cross-fade/stack utilities
+  
+  # 📞 CONTACT SYNCING & USER SEARCH DEPENDENCIES - NEW (FIXED)
+  fast_contacts: ^4.0.0               # Access device contacts (faster alternative)
+  crypto: ^3.0.3                      # Phone number hashing for privacy
+  fuzzywuzzy: ^1.1.6                  # Client-side fuzzy matching
+  connectivity_plus: ^6.1.0           # Connectivity monitoring for offline/online resume
+  acter_avatar: ^2.0.1+1             # Modern avatar generation for assignments
+  animations: ^2.0.11
+  cloud_functions: ^5.6.2
+  # AI / Gemini integration
+  firebase_ai: 2.3.0 # pinned (was any) – keep in sync with pubspec.lock
+  animated_reorderable_list: ^1.0.5
+  firebase_remote_config: ^5.1.4  # Feature flags and remote configuration
+  
+  # 💬 CHAT SYSTEM DEPENDENCIES - Stream Chat Integration
+  stream_chat_flutter: ^9.16.0        # Latest stable version with better APIs
+  stream_chat: ^9.16.0
+  bot_toast: ^4.1.3                   # Toast notifications for chat
+  equatable: ^2.0.7                   # Value equality for chat models
+  fpdart: ^1.1.1                      # Functional programming for error handling
+  hydrated_bloc: ^10.0.0              # State persistence for chat
+  flutter_bloc: ^9.1.0                # State management for chat
+  get_it: ^8.0.3                      # Dependency injection for chat services
+  flutter_dotenv: ^5.2.1              # Environment config for Stream Chat API
+  tflite_flutter: ^0.12.1
+  image: ^4.5.4
+  http: ^1.6.0
+  firebase_ml_model_downloader: ^0.3.3+8
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+  mockito: ^5.4.6
+  build_runner: ^2.5.4
+  network_image_mock: ^2.1.1
+  firebase_auth_mocks: ^0.14.2
+  fake_cloud_firestore: ^3.1.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/ml/
+    - assets/memoji/
+    - assets/animations/
+    - assets/London/
+    - assets/Budapest/
+    - assets/Pisa/
+    - assets/icon/
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font.
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/Open-Sans/OpenSans-Regular.ttf
+        - asset: assets/fonts/Open-Sans/OpenSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Open-Sans/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Open-Sans/OpenSans-Semibold.ttf
+          weight: 600
+        - asset: assets/fonts/Open-Sans/OpenSans-ExtraBold.ttf
+          weight: 800
+    - family: DMSerifDisplay
+      fonts:
+        - asset: assets/fonts/DM-Serif-Display/DMSerifDisplay-Regular.ttf
+        - asset: assets/fonts/DM-Serif-Display/DMSerifDisplay-Italic.ttf
+          style: italic
+  
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  remove_alpha_ios: true
+  image_path: "assets/icon/shopple_foreground.png"
+  adaptive_icon_background: "assets/icon/shopple_background.png"
+  adaptive_icon_foreground: "assets/icon/shopple_foreground.png"
+  adaptive_icon_monochrome: "assets/icon/shopple_monochrome.png"

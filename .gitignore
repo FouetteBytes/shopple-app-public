@@ -1,0 +1,90 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+.idx/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code related
+.vscode
+.vscode/launch.json
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+# /android/app/debug
+# /android/app/profile
+# /android/app/release
+
+shopple_previous
+shopple_previous_build
+product-classifier
+
+
+# Build outputs
+/android/app/build/
+/android/build/
+**/*.apk
+**/*.aab
+R_locked_backup.jar
+.env
+.env.*.local
+.env/
+
+# Firebase/Google configuration files
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+ios/firebase_app_id_file.json
+
+# Local properties 
+android/local.properties
+
+# Coverage reports
+coverage/
+
+# Generated files
+*.g.dart
+*.mocks.dart
+*.freezed.dart
+
+# Firebase options (contains API keys - regenerate with flutterfire configure)
+lib/firebase_options.dart
+
+# Android signing keys
+key.properties
+**/*.keystore
+**/*.jks
+
+# Cloud Functions environment (contains secrets)
+functions/.env
+
+# Environment config with secrets (use env_config.dart.example as template)
+lib/config/env_config.dart

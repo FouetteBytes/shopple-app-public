@@ -1,0 +1,31 @@
+// Copy this file to env_config.dart and replace placeholders with your actual keys
+import '../utils/app_logger.dart';
+
+/// Configuration class for environment variables
+class EnvConfig {
+  static final EnvConfig _instance = EnvConfig._internal();
+
+  factory EnvConfig() => _instance;
+  static EnvConfig get instance => _instance;
+
+  EnvConfig._internal();
+
+  /// Initialize environment configuration
+  Future<void> initialize() async {
+    // No initialization needed for compile-time constants
+    AppLogger.d('EnvConfig initialized (using compile-time constants)');
+  }
+
+  /// Stream Chat API Key
+  /// Get your key from https://getstream.io/dashboard/
+  String get streamChatApiKey =>
+      const String.fromEnvironment('STREAM_CHAT_API_KEY',
+          defaultValue: 'YOUR_STREAM_CHAT_API_KEY');
+
+  /// Stream Chat API Secret
+  /// WARNING: Ideally secrets should not be client-side.
+  /// Get your secret from https://getstream.io/dashboard/
+  String get streamChatApiSecret => const String.fromEnvironment(
+      'STREAM_CHAT_API_SECRET',
+      defaultValue: 'YOUR_STREAM_CHAT_API_SECRET');
+}

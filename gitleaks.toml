@@ -1,0 +1,20 @@
+# Gitleaks Ignore File
+# These are public Firebase API keys which are safe to expose in client-side code.
+# The keys are restricted by Android package name / iOS Bundle ID in the Google Cloud Console.
+
+[allowlist]
+description = "Public Firebase Keys"
+files = [
+  '''lib/firebase_options.dart''',
+  '''android/app/google-services.json''',
+  '''functions/.env'''
+]
+
+[[rules]]
+id = "generic-api-key"
+[rules.allowlist]
+files = [
+  '''doc/JWT_AUTH_FIX.md''',
+  '''test/test_jwt.dart''',
+  '''.env.example'''
+]
