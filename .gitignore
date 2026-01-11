@@ -70,10 +70,10 @@ android/local.properties
 # Coverage reports
 coverage/
 
-# Generated files
+# Generated files (except test mocks which are needed)
 *.g.dart
-*.mocks.dart
 *.freezed.dart
+# Note: *.mocks.dart files are included for tests to work
 
 # Firebase options (contains API keys - regenerate with flutterfire configure)
 lib/firebase_options.dart
