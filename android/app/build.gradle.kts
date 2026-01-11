@@ -40,6 +40,8 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+
+    setProperty("archivesBaseName", "shopple-${defaultConfig.versionName}")
 }
 
 flutter {
