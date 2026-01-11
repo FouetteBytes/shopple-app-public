@@ -10,6 +10,42 @@ The core value proposition is helping users **find the minimum price** for groce
 
 ---
 
+## Screenshots
+
+<div align="center">
+
+| **Splash** | **Authentication** | **Profile** |
+|:---:|:---:|:---:|
+| <img src="assets/readme/screenshots/splash.png" width="250" /> | <img src="assets/readme/screenshots/auth.png" width="250" /> | <img src="assets/readme/screenshots/profile.png" width="250" /> |
+
+| **Dashboard** | **Quick Menu** | **Shopping Lists** |
+|:---:|:---:|:---:|
+| <img src="assets/readme/screenshots/dashboard.png" width="250" /> | <img src="assets/readme/screenshots/quick_menu.png" width="250" /> | <img src="assets/readme/screenshots/shopping_lists.png" width="250" /> |
+
+| **Search** | **Search Results I** | **Search Results II** |
+|:---:|:---:|:---:|
+| <img src="assets/readme/screenshots/search.png" width="250" /> | <img src="assets/readme/screenshots/search_results.png" width="250" /> | <img src="assets/readme/screenshots/search_results_1.png" width="250" /> |
+
+| **Product Details** | **Collaborative List** | **Chat** |
+|:---:|:---:|:---:|
+| <img src="assets/readme/screenshots/product_details.png" width="250" /> | <img src="assets/readme/screenshots/collaborative_list.png" width="250" /> | <img src="assets/readme/screenshots/chat.png" width="250" /> |
+
+| **Request Menu** | **New Request** | **Budget** |
+|:---:|:---:|:---:|
+| <img src="assets/readme/screenshots/product_request.png" width="250" /> | <img src="assets/readme/screenshots/product_request_1.png" width="250" /> | <img src="assets/readme/screenshots/buget.png" width="250" /> |
+
+| **AI Assistant** | **History** | **Action I** |
+|:---:|:---:|:---:|
+| <img src="assets/readme/screenshots/ai_assistant.png" width="250" /> | <img src="assets/readme/screenshots/ai_assistant_history.png" width="250" /> | <img src="assets/readme/screenshots/ai_assistant_1.png" width="250" /> |
+
+| **Action II** | **Action III** | **Action IV** |
+|:---:|:---:|:---:|
+| <img src="assets/readme/screenshots/ai_assistant_2.png" width="250" /> | <img src="assets/readme/screenshots/ai_assistant_3.png" width="250" /> | <img src="assets/readme/screenshots/ai_assistant_4.png" width="250" /> |
+
+</div>
+
+---
+
 ## Features
 
 ### Price Comparison Engine
@@ -426,41 +462,6 @@ flutter test --coverage
 ```
 
 ---
-
-## Screenshots
-
-<div align="center">
-
-| **Splash** | **Authentication** | **Profile** |
-|:---:|:---:|:---:|
-| <img src="assets/readme/screenshots/splash.png" width="250" /> | <img src="assets/readme/screenshots/auth.png" width="250" /> | <img src="assets/readme/screenshots/profile.png" width="250" /> |
-
-| **Dashboard** | **Quick Menu** | **Shopping Lists** |
-|:---:|:---:|:---:|
-| <img src="assets/readme/screenshots/dashboard.png" width="250" /> | <img src="assets/readme/screenshots/quick_menu.png" width="250" /> | <img src="assets/readme/screenshots/shopping_lists.png" width="250" /> |
-
-| **Search** | **Search Results I** | **Search Results II** |
-|:---:|:---:|:---:|
-| <img src="assets/readme/screenshots/search.png" width="250" /> | <img src="assets/readme/screenshots/search_results.png" width="250" /> | <img src="assets/readme/screenshots/search_results_1.png" width="250" /> |
-
-| **Product Details** | **Collaborative List** | **Chat** |
-|:---:|:---:|:---:|
-| <img src="assets/readme/screenshots/product_details.png" width="250" /> | <img src="assets/readme/screenshots/collaborative_list.png" width="250" /> | <img src="assets/readme/screenshots/chat.png" width="250" /> |
-
-| **Request Menu** | **New Request** | **Budget** |
-|:---:|:---:|:---:|
-| <img src="assets/readme/screenshots/product_request.png" width="250" /> | <img src="assets/readme/screenshots/product_request_1.png" width="250" /> | <img src="assets/readme/screenshots/buget.png" width="250" /> |
-
-| **AI Assistant** | **History** | **Action I** |
-|:---:|:---:|:---:|
-| <img src="assets/readme/screenshots/ai_assistant.png" width="250" /> | <img src="assets/readme/screenshots/ai_assistant_history.png" width="250" /> | <img src="assets/readme/screenshots/ai_assistant_1.png" width="250" /> |
-
-| **Action II** | **Action III** | **Action IV** |
-|:---:|:---:|:---:|
-| <img src="assets/readme/screenshots/ai_assistant_2.png" width="250" /> | <img src="assets/readme/screenshots/ai_assistant_3.png" width="250" /> | <img src="assets/readme/screenshots/ai_assistant_4.png" width="250" /> |
-
-</div>
-
 
 ## Architecture Highlights
 
