@@ -63,19 +63,19 @@ void main() async {
     }),
   );
 
-  // Initialize core controllers.
-  // Auth and Session controllers.
+  // Initialize core controllers
+  // Auth and Session controllers
   Get.put(AuthController(), permanent: true);
   Get.lazyPut(() => SessionController(), fenix: true);
   Get.lazyPut(() => UserProfileController(), fenix: true);
 
   Get.lazyPut(() => UserController(), fenix: true);
-  
+
   Get.lazyPut(() => ContactsController(), fenix: true);
-  // AI Agent controller.
+  // AI Agent controller
   Get.lazyPut(() => AIAgentController(), fenix: true);
 
-  // Initialize chat dependencies.
+  // Initialize chat dependencies
   unawaited(
     ChatDependencyInjector.initializeChat().catchError((e) {
       AppLogger.w('Chat initialization failed: $e');
@@ -93,9 +93,9 @@ void main() async {
   runApp(
     Builder(
       builder: (context) {
-        // Defer heavy initialization.
+        // Defer heavy initialization
         WidgetsBinding.instance.addPostFrameCallback((_) {
-          // Initialize heavy services.
+          // Initialize heavy services
         });
         return MyApp();
       },
