@@ -92,7 +92,7 @@ class _EnhancedProductCardState extends State<EnhancedProductCard>
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Image + Best deal badge
+                // Image and Best deal badge
                 Stack(
                   clipBehavior: Clip.none,
                   children: [
@@ -273,7 +273,7 @@ class _EnhancedProductCardState extends State<EnhancedProductCard>
 
                       const SizedBox(height: 8),
 
-                      // Size + category chips with subtle scale-in
+                      // Size and category chips with subtle scale-in
                       TweenAnimationBuilder<double>(
                         tween: Tween(begin: 0.94, end: 1.0),
                         duration: const Duration(milliseconds: 300),

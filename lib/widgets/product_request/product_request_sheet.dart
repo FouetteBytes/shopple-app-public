@@ -458,7 +458,7 @@ class _RequestFormState extends State<_RequestForm> {
       return;
     }
 
-    // Validation based on request type
+    // Validation based on the request type
     if (widget.requestType == RequestType.reportError ||
         widget.requestType == RequestType.updateProduct) {
       if (_taggedProductId == null) {

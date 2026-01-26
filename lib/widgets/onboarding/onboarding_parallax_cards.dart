@@ -95,7 +95,7 @@ class _OnboardingParallaxCardsState extends State<OnboardingParallaxCards>
         _cardWidth = _cardHeight * 0.78;
 
         _pageController ??= PageController(
-          // Start somewhere in the middle of a large range to simulate infinite scroll feel
+          // Start somewhere in the middle of a large range to simulate infinite scroll feeling
           initialPage: widget.slides.length * 50,
           viewportFraction: (_cardWidth / constraints.maxWidth).clamp(
             0.32,
